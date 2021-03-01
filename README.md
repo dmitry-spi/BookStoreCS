@@ -1,46 +1,36 @@
 # Book Store
 
-## Table of Contents
-
-- [About](#about)
-- [Getting Started](#getting_started)
-- [Usage](#usage)
-- [Contributing](../CONTRIBUTING.md)
-
 ## About <a name = "about"></a>
 
-Write about 1-2 paragraphs describing the purpose of your project.
-
-## Getting Started <a name = "getting_started"></a>
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See [deployment](#deployment) for notes on how to deploy the project on a live system.
+The books store with the possibility to comment on books. There will be 2 roles: admin and guest.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them.
+Admin should be able to:
+1. Create books
+2. Approve books (once book approved, user who added it should receive an email) 3. View all books with pagination
+4. View single book info with all data including creator and comments
+5. Add comments
 
-```
-Give examples
-```
+Guest should be able to:
+1. Create books (books should not be displayed for guests without admin approval) 2. View all approved books with pagination
+3. View single book info with all data including creator and comments
+4. Add comments
+
+## Interface
+
+JSON REST API, node.js, express.js, PostgreSQL
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
+npm install
 
 ## Usage <a name = "usage"></a>
 
-Add notes about how to use the system.
+npm run dev
+or
+npm start
+
+## Test
+
+npm run test
